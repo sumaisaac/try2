@@ -11,7 +11,7 @@ app = Flask(__name__)
 openai.api_type = "azure"
 openai.api_base = "https://react-ticketing-openai.openai.azure.com/"
 openai.api_version = "2024-08-01-preview"
-openai.api_key = "6r0HQtbI6bksgMkxcdD7R3bSGIqDASz5qDCSI7hpTE4EX1XWBV1hJQQJ99AKACYeBjFXJ3w3AAABACOGMi7L"
+openai.api_key = "2AeDKaG1FvNa4oECqkYx0EZIvNKaXSeCW3TwmGOpbGEgi6CdW654JQQJ99ALACYeBjFXJ3w3AAABACOGIoUJ"
 
 # Read CSV file to get solutions
 def read_csv_solutions(csv_file):
@@ -97,7 +97,7 @@ def resolve_issue(user_issue, csv_file, pdf_file=None):
             results['PDF'] = pdf_match['Resolution Steps']
             accuracy_scores['PDF'] = pdf_similarity * 100
 
-    # Get the solution from the Azure GPT-4o-mini model
+    # Get the solution from the Azure GPT-4o-mini model ok?
     gpt_solution = get_solution_from_azure_gpt(user_issue)
     if gpt_solution:
         results['GPT-4o-mini'] = gpt_solution['Resolution Steps']
