@@ -1,0 +1,87 @@
+﻿Ticket ID,Error Code,Description,Issue Type,Status,Project Key,Resolution,Resolution Steps
+TT-001,ORA-12154,TNS:could not resolve the connect identifier specified,Bug,Resolved,ORCL-DB,Configuration Updated,Update tnsnames.ora file with correct connect identifier
+TT-002,ORA-01109,Database not open,Incident,Closed,ORCL-DB,Database Opened,Execute 'ALTER DATABASE OPEN;' as SYSDBA
+TT-003,ORA-00600,Internal error,Bug,In Progress,ORCL-DB,Escalated to Oracle Support,Collect diagnostic data and contact Oracle Support
+TT-004,ORA-07445,Operating system exception,Incident,Resolved,ORCL-DB,OS Patch Applied,Analyze trace files and core dumps
+TT-005,ORA-04031,Out of memory in shared pool,Performance,Closed,ORCL-DB,Memory Increased,Increase shared pool size or optimize SQL statements
+TT-006,ORA-01031,Insufficient privileges,Security,Resolved,ORCL-DB,Privileges Granted,Grant necessary privileges to the user
+TT-007,ORA-12541,TNS:no listener,Incident,Closed,ORCL-DB,Listener Started,Start the Oracle listener service
+TT-008,ORA-00904,Invalid identifier,Bug,Resolved,ORCL-DB,Query Corrected,Correct column or table name in SQL statement
+TT-009,ORA-01017,Invalid username/password,Security,Closed,ORCL-DB,Credentials Updated,Verify and correct login credentials
+TT-010,ORA-00001,Unique constraint violated,Bug,Resolved,ORCL-DB,Data Corrected,Remove duplicate values or modify constraint
+TT-011,ORA-12154,TNS:could not resolve the connect identifier specified,Configuration,In Progress,ORCL-DB,Pending Verification,Check ORACLE_HOME and TNS_ADMIN environment variables
+TT-012,ORA-01109,Database not open,Incident,Resolved,ORCL-DB,Database Recovered,Verify database status and open if necessary
+TT-013,ORA-00600,Internal error,Bug,Closed,ORCL-DB,Patched,Apply latest Oracle patches
+TT-014,ORA-07445,Operating system exception,Incident,In Progress,ORCL-DB,Upgrade Scheduled,Update operating system and Oracle versions
+TT-015,ORA-04031,Out of memory in shared pool,Performance,Resolved,ORCL-DB,Query Optimized,Implement SQL tuning to reduce memory usage
+TT-016,ORA-01031,Insufficient privileges,Security,Closed,ORCL-DB,Access Reviewed,Review and update user roles and permissions
+TT-017,ORA-12541,TNS:no listener,Configuration,Resolved,ORCL-DB,Listener Configured,Verify listener configuration in listener.ora
+TT-018,ORA-00904,Invalid identifier,Bug,Closed,ORCL-DB,Typo Fixed,Check for typos in SQL statement
+TT-019,ORA-01017,Invalid username/password,Security,Resolved,ORCL-DB,Password Reset,Reset user password if forgotten
+TT-020,ORA-00001,Unique constraint violated,Bug,In Progress,ORCL-DB,Code Update Pending,Implement error handling for duplicate entries
+TT-021,ORA-12154,TNS:could not resolve the connect identifier specified,Incident,Resolved,ORCL-DB,Services Restarted,Restart Oracle services
+TT-022,ORA-01109,Database not open,Incident,Closed,ORCL-DB,Startup Error Fixed,Check alert log for database startup errors
+TT-023,ORA-00600,Internal error,Bug,In Progress,ORCL-DB,Integrity Check Ongoing,Perform database integrity checks
+TT-024,ORA-07445,Operating system exception,Incident,Resolved,ORCL-DB,Hardware Verified,Verify hardware compatibility
+TT-025,ORA-04031,Out of memory in shared pool,Performance,Closed,ORCL-DB,Connection Pooling Implemented,Implement connection pooling
+TT-026,ORA-01031,Insufficient privileges,Security,Resolved,ORCL-DB,Custom Roles Created,Create custom roles for specific access needs
+TT-027,ORA-12541,TNS:no listener,Network,Closed,ORCL-DB,Firewall Configured,Check firewall settings for listener port
+TT-028,ORA-00904,Invalid identifier,Bug,Resolved,ORCL-DB,Schema Verified,Verify table and column existence in schema
+TT-029,ORA-01017,Invalid username/password,Security,In Progress,ORCL-DB,Policy Update Pending,Implement password complexity policies
+TT-030,ORA-00001,Unique constraint violated,Bug,Closed,ORCL-DB,Merge Statements Implemented,Use merge statements for upsert operations
+TT-031,ORA-12154,TNS:could not resolve the connect identifier specified,Network,Resolved,ORCL-DB,DNS Updated,Verify DNS resolution for database server
+TT-032,ORA-01109,Database not open,Incident,Closed,ORCL-DB,Database Recovered,Recover database from backup if corrupted
+TT-033,ORA-00600,Internal error,Bug,In Progress,ORCL-DB,Object Recreation Ongoing,Recreate problematic database objects
+TT-034,ORA-07445,Operating system exception,Incident,Resolved,ORCL-DB,Software Conflict Resolved,Check for conflicting third-party software
+TT-035,ORA-04031,Out of memory in shared pool,Performance,Closed,ORCL-DB,Cache Implemented,Implement result cache for frequent queries
+TT-036,ORA-01031,Insufficient privileges,Security,In Progress,ORCL-DB,Privilege Audit Ongoing,Audit user privileges and remove unnecessary ones
+TT-037,ORA-12541,TNS:no listener,Network,Resolved,ORCL-DB,Port Verified,Verify listener is running on correct port
+TT-038,ORA-00904,Invalid identifier,Bug,Closed,ORCL-DB,Query Optimized,Use table aliases to resolve ambiguous column names
+TT-039,ORA-01017,Invalid username/password,Security,In Progress,ORCL-DB,MFA Implementation Ongoing,Implement multi-factor authentication
+TT-040,ORA-00001,Unique constraint violated,Bug,Resolved,ORCL-DB,Error Handling Improved,Add error handling for constraint violations
+TT-041,ORA-12154,TNS:could not resolve the connect identifier specified,Network,Closed,ORCL-DB,Hosts File Updated,Update hosts file with correct IP address
+TT-042,ORA-01109,Database not open,Incident,Resolved,ORCL-DB,Datafiles Verified,Check for missing datafiles
+TT-043,ORA-00600,Internal error,Performance,In Progress,ORCL-DB,Performance Analysis Ongoing,Analyze AWR reports for performance issues
+TT-044,ORA-07445,Operating system exception,Incident,Closed,ORCL-DB,Resources Verified,Verify sufficient system resources
+TT-045,ORA-04031,Out of memory in shared pool,Performance,Resolved,ORCL-DB,AMM Implemented,Implement automatic memory management
+TT-046,ORA-01031,Insufficient privileges,Security,Closed,ORCL-DB,Proxy Authentication Set,Use proxy authentication for elevated access
+TT-047,ORA-12541,TNS:no listener,Network,In Progress,ORCL-DB,Log Analysis Ongoing,Verify listener log for connection attempts
+TT-048,ORA-00904,Invalid identifier,Bug,Resolved,ORCL-DB,Object Structure Verified,Use DESCRIBE command to verify object structure
+TT-049,ORA-01017,Invalid username/password,Security,Closed,ORCL-DB,Lockout Policy Implemented,Implement account lockout policies
+TT-050,ORA-00001,Unique constraint violated,Bug,In Progress,ORCL-DB,Sequence Implementation Ongoing,Use sequences for generating unique values
+TT-051,ORA-12154,TNS:could not resolve the connect identifier specified,Network,Resolved,ORCL-DB,Network Connectivity Restored,Check for network connectivity issues
+TT-052,ORA-01109,Database not open,Configuration,Closed,ORCL-DB,SPFILE Verified,Verify SPFILE parameters
+TT-053,ORA-00600,Internal error,Incident,In Progress,ORCL-DB,Recovery Advisor Running,Use Data Recovery Advisor for repair options
+TT-054,ORA-07445,Operating system exception,Incident,Resolved,ORCL-DB,Libraries Updated,Update system libraries
+TT-055,ORA-04031,Out of memory in shared pool,Performance,Closed,ORCL-DB,PGA Target Set,Implement PGA aggregate target
+TT-056,ORA-01031,Insufficient privileges,Security,In Progress,ORCL-DB,Privilege Review Ongoing,Implement least privilege principle
+TT-057,ORA-12541,TNS:no listener,Configuration,Resolved,ORCL-DB,Listener Configuration Updated,Verify listener is configured for the database
+TT-058,ORA-00904,Invalid identifier,Bug,Closed,ORCL-DB,Query Refactored,Use fully qualified names for objects
+TT-059,ORA-01017,Invalid username/password,Security,In Progress,ORCL-DB,Password Policy Update Ongoing,Implement password rotation policies
+TT-060,ORA-00001,Unique constraint violated,Bug,Resolved,ORCL-DB,Upsert Logic Implemented,Use ON DUPLICATE KEY UPDATE for MySQL
+TT-061,ORA-12154,TNS:could not resolve the connect identifier specified,Configuration,Closed,ORCL-DB,LDAP Configured,Verify LDAP configuration for name resolution
+TT-062,ORA-01109,Database not open,Incident,In Progress,ORCL-DB,Archive Log Check Ongoing,Check for archive log issues
+TT-063,ORA-00600,Internal error,Bug,Resolved,ORCL-DB,Test Case Created,Use SQL Test Case Builder for reproducible cases
+TT-064,ORA-07445,Operating system exception,Installation,Closed,ORCL-DB,Binary Installation Verified,Verify correct Oracle binary installation
+TT-065,ORA-04031,Out of memory in shared pool,Performance,In Progress,ORCL-DB,Cache Implementation Ongoing,Implement result cache for PL/SQL functions
+TT-066,ORA-01031,Insufficient privileges,Security,Resolved,ORCL-DB,Database Vault Implemented,Implement database vault for sensitive data
+TT-067,ORA-12541,TNS:no listener,Network,Closed,ORCL-DB,Listener Processes Verified,Check for conflicting listener processes
+TT-068,ORA-00904,Invalid identifier,Bug,In Progress,ORCL-DB,Case Sensitivity Check Ongoing,Verify case sensitivity in object names
+TT-069,ORA-01017,Invalid username/password,Security,Resolved,ORCL-DB,Password Verification Implemented,Implement password verification function
+TT-070,ORA-00001,Unique constraint violated,Bug,Closed,ORCL-DB,Application Logic Updated,Implement application-level uniqueness check
+TT-071,ORA-12154,TNS:could not resolve the connect identifier specified,Configuration,In Progress,ORCL-DB,Net Configuration Review Ongoing,Verify Oracle Net configuration files
+TT-072,ORA-01109,Database not open,Incident,Resolved,ORCL-DB,Control Files Verified,Check for corrupt control files
+TT-073,ORA-00600,Internal error,Bug,Closed,ORCL-DB,Diagnostic Data Collected,Use ADRCI utility for diagnostic data collection
+TT-074,ORA-07445,Operating system exception,Performance,In Progress,ORCL-DB,Memory Allocation Check Ongoing,Verify correct memory allocation
+TT-075,ORA-04031,Out of memory in shared pool,Performance,Resolved,ORCL-DB,Cursor Sharing Implemented,Implement cursor_sharing parameter
+TT-076,ORA-01031,Insufficient privileges,Security,Closed,ORCL-DB,Fine-grained Access Implemented,Implement fine-grained access control
+TT-077,ORA-12541,TNS:no listener,Configuration,In Progress,ORCL-DB,User Verification Ongoing,Verify listener is running under correct user
+TT-078,ORA-00904,Invalid identifier,Performance,Resolved,ORCL-DB,Statistics Updated,Check for stale statistics on objects
+TT-079,ORA-01017,Invalid username/password,Security,Closed,ORCL-DB,Centralized User Management Set,Implement centralized user management
+TT-080,ORA-00001,Unique constraint violated,Bug,In Progress,ORCL-DB,Merge Statement Implementation Ongoing,Use MERGE statement for Oracle upserts
+TT-081,ORA-12154,TNS:could not resolve the connect identifier specified,Configuration,Resolved,ORCL-DB,Oracle Homes Verified,Check for multiple Oracle homes conflict
+TT-082,ORA-01109,Database not open,Incident,Closed,ORCL-DB,Database Role Verified,Verify database role (primary/standby)
+TT-083,ORA-00600,Internal error,Bug,In Progress,ORCL-DB,Support Case Opened,Use Oracle Support to check for known issues
+TT-084,ORA-07445,Operating system exception,Incident,Resolved,ORCL-DB,OS Patched,Verify correct OS patch level
+TT-085,ORA-04031,Out of memory in shared pool,Performance,Closed,ORCL-DB,ASMM Implemented,Implement automatic shared memory management
+TT-086,ORA-01031,Insufficient privileges,Security,In Progress,,,
