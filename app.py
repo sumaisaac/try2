@@ -17,7 +17,7 @@ openai.api_key = "2AeDKaG1FvNa4oECqkYx0EZIvNKaXSeCW3TwmGOpbGEgi6CdW654JQQJ99ALAC
 def read_csv_solutions(csv_file):
     try:
         data = pd.read_csv(csv_file)
-        data = data.fillna('')  # Fill any missing values with empty strings
+        data = data.fillna('')  # Fill any missing values with empty stringss
         solutions = []
         for _, row in data.iterrows():
             solutions.append({
